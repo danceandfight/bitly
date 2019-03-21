@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 ### Пример использования
 
-```python
+```shell
 $ python main.py https://dvmn.org/modules/
 http://bit.ly/2Jq1PGj
 $ python main.py http://bit.ly/2Jq1PGj
