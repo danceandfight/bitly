@@ -1,5 +1,4 @@
 from dotenv import load_dotenv
-load_dotenv()
 import os 
 import requests
 import argparse
@@ -37,8 +36,8 @@ def count_clicks(bitlink, token):
   return response.json()["link_clicks"]
 
 def main():
+  load_dotenv()
   token = os.getenv("TOKEN")
-  #user_link = input()
   parser = argparse.ArgumentParser()
   parser.add_argument('link')
   user_link = parser.parse_args().link
